@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODOLIST</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h2>
+        To-do-List
+    </h2>
+</header>
+<div id="myDIV" class="main">
+    <h2>ToDo List</h2>
+    <input type="text" id="taskInput" placeholder="New Task">
+    <span onclick="newTask()" class="addBtn">Add</span>
+</div>
+
+<ul id="task_list">
+    <li>Tuda Suda</li>
+    <li>Tooth the brush</li>
+    <li>Cook the breakfast</li>
+    <li>Sleep</li>
+    <li>Read comics</li>
+    <li>Code all day</li>
+</ul>
+<script>
+    var nodeList = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < nodeList.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        nodeList[i].appendChild(span);
+    }
+
+    //Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+
+    // Add a "checked" symbol when clicking on a list item
+    //var list = document.querySelector('ul');
+    // list.addEventListener('click', function(ev) {
+    //     if (ev.target.tagName === 'LI') {
+    //         ev.target.classList.toggle('checked');
+    //     }
+    //
+    // }, false);
+
+    // Create a new list item when clicking on the "Add" button
+    function newTask() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("taskInput").value;
+        var text = document.createTextNode(inputValue);
+        li.appendChild(text);
+        if (inputValue === '') {
+            confirm("Write something");
+        } else {
+            document.getElementById("task_list").appendChild(li);
+        }
+        document.getElementById("taskInput").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    }
+
+    var input = document.getElementById("taskInput");
+    input.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementsByClassName("addBtn").click();
+        }
+    });
+</script>
+</body>
+</html>
