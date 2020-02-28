@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ToDo List</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./reset.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">	
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h3>ToDo List</h3>
+		</div>
+		<div class="main">
+			<h1>ToDo List</h1>
+			<form id="add_item">
+				<input type="text" name="description" id="task_text" placeholder="New Task" onkeypress="return handleKeypress(event);">
+				<button type="button" name="description" id="task_button" onclick="addRow()">Add</button>
+			</form>
+			<table id="tasks">
+			</table>
+		</div>
+
+	</body>
+</html>

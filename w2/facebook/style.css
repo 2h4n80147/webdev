@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+
+@font-face { 
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
+}
+
+
+label {
+	color: white;
+	font-size: 13px;
+	font-family: "Segoe UI", "Segoe", Sans-Serif;
+	font-weight: 300;
+	top: -32px;
+}
+
+* {
+	font-family: "Segoe UI", "Segoe", Sans-Serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main {
+	height: 700px;
+	margin-bottom: 100px;
+}
+
+.header {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 80px;
+	margin: 0px;
+	background-color: #3B5999; 
+}
+
+.registration {
+	display: block;
+	position: relative;
+	float: top;
+}
+
+#email, #password {
+	float: left;
+
+}
+
+#email input, #email label {
+	display: block;
+	position: relative;
+	left: 680px;
+}
+
+#password input, #password label {
+	display: block;
+	position: relative;
+	left: 690px;
+}
+
+.header #email input {
+	top: -25px;
+}
+
+.header #password input {
+	top: -25px;
+}
+
+
+
+#logo {
+	display: block;
+	position: relative;
+	width: 170px;
+	height: 45px;
+	left: 150px;
+	top: 20px;
+}
+
+#login {
+
+	position: relative;
+	color: white;
+	float: left;
+
+	left: 700px;
+	top: -10px;
+	height: 22px;
+	width: 40px;
+	border: 1px solid black;
+	background: #3673d6;
+	text-align: center;
+}
+
+#password_recovery {
+	display: block;
+	position: relative;
+	float: top;
+	color: #94b1e0;
+	text-decoration: none;
+	font-size: 12px;
+	top: 12px;
+	left: 500px;
+}
+
+#description_text {
+	display: block;
+	position: relative;
+	color: #103063;
+	left: 150px;
+	max-width: 600px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#world_map {
+	display: block;
+	position: relative;
+	left: 150px;
+}
+
+.registration {
+	background-image: linear-gradient(#FFFFFF, #D3D8E8);
+}
+
+.registration h1 {
+	display: block;
+	position: relative;
+	left: 730px;
+	top: -300px;
+}
+
+.registration h3 {
+	display: block;
+	float: top;
+	font-weight: 600;
+	position: relative;
+	left: 730px;
+	top: -310px;
+}
+
+
+#details {
+	height: 220px;
+}
+
+#details div {
+	display: block;
+	position: relative;
+	float: top;
+	left: 730px;
+}
+
+#details input {
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #BDC7D8;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+#row_1 {
+	top: -300px;
+}
+
+#row_1 input {
+	width: 201px;
+}
+
+#row_2 {
+	top: -290px;
+}
+
+#row_2 input {
+	width: 420px;
+}
+
+#row_3 {
+	top: -280px;
+}
+
+#row_3 input {
+	width: 420px;
+}
+
+#row_4 {
+	top: -270px;
+}
+
+#row_4 select {
+	width: 70px;
+	height: 30px;
+	float: left;
+}
+
+#row_4 h4 {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	color: #90949C;
+}
+
+#row_5 {
+	top: -235px;
+}
+
+#row_5 h4 {
+	display: block;
+	position: relative;
+	left: -210px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	color: #90949C;
+}
+
+
+#row_5 label {
+	position: relative;
+	top: -5px;
+	font-weight: 400;
+	font-size: 20px;
+	margin-right: 5px;
+	color: #000000;
+}
+
+#row_6 {
+	top: -225px;
+}
+
+#row_6 p {
+	position: relative;
+	color: #777777;
+	top: -10px;
+	font-size: 12px;
+	max-width: 300px;
+}
+
+#row_6 p a {
+	white-space: pre-wrap; /* CSS3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+#row_7 {
+	top: -210px;
+}
+
+#row_7 button {
+	width: 200px;
+	height: 40px;
+	border: 1px solid #3B6E22;
+	border-radius: 5px;
+	background-color: #5E984B; 
+	font-size: 23px;
+	font-weight: 600;
+	color: #FFFFFF;	
+}
+
+#row_7 h4 {
+	font-weight: 600;
+}
+
+footer {
+	height: 50px;
+}
+
+#language {
+	display: block;
+	position: relative;
+	left: 150px;
+	top: -60px;
+	font-size: 13px;
+	color: #999999;
+}
+
+
+footer hr {
+	display: block;
+	position: absolute;
+	height: 1px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: #DDDFE2;	
+	top: -55px;
+	top: 770px;
+	right: 100px;
+	left: 150px;
+}
+
+#facebook_details {
+	display: block;
+	position: relative;
+	left: 150px;
+	top: -50px;
+	font-size: 13px;
+}
+
+#facebook_company {
+	display: block;
+	position: relative;
+	top: -45px;
+	left: 150px;
+	font-size: 12px;
+	color: #	737373;
+}
